@@ -4,41 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#111d45">
-<title>Scan to Connect | Mehmet Oğuzhan ÖZKURT</title>
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<title>Business Card | Mehmet Oğuzhan ÖZKURT</title>
 <style>
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:#0b1534}
-body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#fff;
-background:radial-gradient(circle at 50% -5%,#5367cf 0,#263c8a 32%,#111d45 68%,#091127 100%);
-min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top)) 16px max(18px,env(safe-area-inset-bottom))}
-.shell{width:min(100%,430px);text-align:center}
-.brand{font-size:42px;font-weight:800;letter-spacing:1px}.brand span{font-weight:500}
-.tag{font-size:11px;letter-spacing:.15em;opacity:.8;margin:3px 0 18px}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#0b1534}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#fff;background:radial-gradient(circle at 50% -5%,#5367cf 0,#263c8a 32%,#111d45 68%,#091127 100%);min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top)) 16px max(18px,env(safe-area-inset-bottom))}
+.shell{width:min(100%,430px);text-align:center}.brand{font-size:42px;font-weight:800;letter-spacing:1px}.brand span{font-weight:500}.tag{font-size:11px;letter-spacing:.15em;opacity:.8;margin:3px 0 18px}
 .card{background:#fff;color:#17223f;border-radius:28px;padding:24px 18px 20px;box-shadow:0 22px 65px rgba(0,0,0,.28)}
 h1{font-size:24px;margin:0 0 6px}.role{font-size:13px;font-weight:700;color:#4b5c89}.company{font-size:13px;color:#8b94aa;margin-top:4px}
 .qrbox{margin:22px auto 16px;width:min(82vw,320px);background:#fff;border:1px solid #e6e9f2;border-radius:22px;padding:14px;box-shadow:0 8px 28px rgba(27,45,100,.10)}
-.qrbox img{display:block;width:100%;height:auto;image-rendering:pixelated}
-.scan{font-size:22px;font-weight:900;color:#2d4599;letter-spacing:.04em}.sub{font-size:13px;color:#6f7b98;margin-top:6px}
-.actions{font-size:11px;color:#929bb0;margin-top:9px}.url{margin-top:16px;padding:10px 12px;border-radius:12px;background:#f5f7fb;color:#52617f;font-size:11px;overflow-wrap:anywhere}
-.hint{font-size:11px;opacity:.72;margin-top:13px}
+.qrbox img{display:block;width:100%;height:auto;image-rendering:pixelated}.scan{font-size:22px;font-weight:900;color:#2d4599;letter-spacing:.04em}.sub{font-size:13px;color:#6f7b98;margin-top:6px}.actions{font-size:11px;color:#929bb0;margin-top:9px}.url{margin-top:16px;padding:10px 12px;border-radius:12px;background:#f5f7fb;color:#52617f;font-size:11px;overflow-wrap:anywhere}.hint{font-size:11px;opacity:.72;margin-top:13px}
 @media(max-height:740px){.brand{font-size:32px}.tag{margin-bottom:10px}.card{padding:16px}.qrbox{margin:14px auto 10px;width:min(65vh,285px)}h1{font-size:21px}.hint{margin-top:8px}}
 </style>
 </head>
-<body>
-<div class="shell">
-  <div class="brand">ITOC<span>360</span></div>
-  <div class="tag">AI-FIRST INCIDENT MANAGEMENT</div>
-  <main class="card">
-    <h1>Mehmet Oğuzhan ÖZKURT</h1>
-    <div class="role">Monitoring Team Lead · Zabbix Administrator</div>
-    <div class="company">ITserv Technology</div>
-    <div class="qrbox"><img src="qr.png" alt="QR code for digital business card"></div>
-    <div class="scan">SCAN TO CONNECT</div>
-    <div class="sub">Open my digital business card</div>
-    <div class="actions">Save Contact · WhatsApp · LinkedIn</div>
-    <div class="url">oguzhanozkurt.github.io/digital-card/</div>
-  </main>
-  <div class="hint">Point your camera at the QR code</div>
-</div>
-</body>
-</html>
+<body><div class="shell">
+<div class="brand">ITOC<span>360</span></div><div class="tag">AI-FIRST INCIDENT MANAGEMENT</div>
+<main class="card"><h1>Mehmet Oğuzhan ÖZKURT</h1><div class="role">Monitoring Team Lead · Zabbix Administrator</div><div class="company">ITserv Technology</div>
+<div class="qrbox"><img src="qr.png" alt="QR code for digital business card"></div>
+<div class="scan">SCAN TO CONNECT</div><div class="sub">Open my digital business card</div><div class="actions">Save Contact · WhatsApp · LinkedIn</div><div class="url">oguzhanozkurt.github.io/digital-card/</div></main>
+<div class="hint">Point your camera at the QR code</div></div>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));}</script>
+</body></html>
